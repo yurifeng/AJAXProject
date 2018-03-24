@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.yuri.mapper.SsxjlMapper">
+
+	<select id="selectAllProvinces" resultType="province">
+		select * from province
+	</select>
+	
+	<select id="selectAllCitiesByProvinceCode" resultType="city">
+		select * from city where provinceid=#{provinceCode}
+	</select>
+	
+	<select id="selectAllAreasByCityCode" resultType="area">
+		select * from area where cityid=#{cityCode}
+	</select>
+</mapper>

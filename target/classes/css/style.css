@@ -1,0 +1,12 @@
+* {
+	text-align: center;
+}
+
+.ok {
+	color: green;
+}
+
+.error {
+	font-weight: bolder;
+	color: red;
+}
