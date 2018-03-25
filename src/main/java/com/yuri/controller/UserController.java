@@ -11,12 +11,13 @@ import javax.servlet.http.HttpServletResponse;
 
 /**   
 *    
-* 项目名称：AjaxTeach   
-* 类名称：UserController   
-* 类描述：用户控制器
-* 创建时间：2018年3月24日 下午5:43:20
+* @Title: UserController.java  
+* @Package: com.yuri.controller
+* @Project: AjaxProject
+* @Description: 用户登录控制器(仅做练习测试,代码存在硬编码)
+* @date: 2018年3月25日 下午3:29:52
 * @author: yuriFeng
-* 联系方式：yuri_feng@outlook.com 
+* Contect: yuri_feng@outlook.com 
 *      
 */
 @WebServlet(urlPatterns = "/user/check")
@@ -37,7 +38,7 @@ public class UserController extends HttpServlet {
 		PrintWriter out = response.getWriter();
 
 		// 判断条件,想前台输出响应文本
-		if ("jack".equalsIgnoreCase(username) || "rose".equalsIgnoreCase(username)) {
+		if ("tim".equalsIgnoreCase(username) || "linda".equalsIgnoreCase(username)) {
 			out.print("1");
 		} else {
 			out.print("0");
